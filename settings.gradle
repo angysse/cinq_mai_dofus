@@ -1,0 +1,2 @@
+rootProject.name='cinq_mai_dofus'
+include ':app'
