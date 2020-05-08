@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">cinq_mai_dofus</string>
+    <string name="welcome_mag">Bienvenue sur cette application qui regroupe toutes les armes de dofus </string>
+    <string name="point_bouftout">Bouftouts tués : 0</string>
+    <string name="texte_minijeux">MINI JEUX : Appuie un maximum de fois sur la hache pour découper un max de BOUFTOUT  !! </string>
 </resources>
