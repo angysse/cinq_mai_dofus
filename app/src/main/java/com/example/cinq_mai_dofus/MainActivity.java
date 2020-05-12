@@ -11,6 +11,9 @@ public class MainActivity extends AppCompatActivity {
     private Button play;
 
     private Button armeButton;
+
+    private Button sound;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +39,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent otherActivity = new Intent (getApplicationContext(), Minijeux.class);
+                startActivity(otherActivity);
+                finish();
+
+            }
+        });
+
+
+        this.sound = (Button) findViewById(R.id.sound);
+
+        sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent otherActivity = new Intent (getApplicationContext(), Sound.class);
                 startActivity(otherActivity);
                 finish();
 
