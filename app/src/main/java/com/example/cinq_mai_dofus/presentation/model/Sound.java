@@ -1,4 +1,4 @@
-package com.example.cinq_mai_dofus;
+package com.example.cinq_mai_dofus.presentation.model;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
+
+import com.example.cinq_mai_dofus.R;
 
 import java.util.Timer;
 import java.util.TimerTask;

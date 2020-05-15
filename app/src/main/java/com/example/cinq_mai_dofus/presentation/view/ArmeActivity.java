@@ -1,4 +1,4 @@
-package com.example.cinq_mai_dofus;
+package com.example.cinq_mai_dofus.presentation.view;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.cinq_mai_dofus.R;
+import com.example.cinq_mai_dofus.data.DofusAPI;
+import com.example.cinq_mai_dofus.presentation.model.Arme;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;

@@ -1,6 +1,8 @@
-package com.example.cinq_mai_dofus;
+package com.example.cinq_mai_dofus.data;
 
 
+
+import com.example.cinq_mai_dofus.presentation.model.Arme;
 
 import java.util.List;
 

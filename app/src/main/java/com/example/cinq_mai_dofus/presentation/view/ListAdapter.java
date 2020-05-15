@@ -1,8 +1,7 @@
-package com.example.cinq_mai_dofus;
+package com.example.cinq_mai_dofus.presentation.view;
 
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +11,8 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.cinq_mai_dofus.R;
+import com.example.cinq_mai_dofus.presentation.model.Arme;
 
 import java.util.List;
 

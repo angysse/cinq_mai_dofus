@@ -1,4 +1,4 @@
-package com.example.cinq_mai_dofus;
+package com.example.cinq_mai_dofus.presentation.model;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.cinq_mai_dofus.R;
 
 public class Minijeux extends AppCompatActivity {
 

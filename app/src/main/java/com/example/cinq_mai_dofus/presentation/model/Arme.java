@@ -1,4 +1,4 @@
-package com.example.cinq_mai_dofus;
+package com.example.cinq_mai_dofus.presentation.model;
 
 public class Arme {
 
