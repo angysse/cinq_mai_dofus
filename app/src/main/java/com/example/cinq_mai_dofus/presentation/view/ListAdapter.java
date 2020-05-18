@@ -2,6 +2,8 @@ package com.example.cinq_mai_dofus.presentation.view;
 
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,13 +16,17 @@ import com.bumptech.glide.Glide;
 import com.example.cinq_mai_dofus.R;
 import com.example.cinq_mai_dofus.presentation.model.Arme;
 
+import java.io.Serializable;
 import java.util.List;
+
+import static androidx.core.content.ContextCompat.startActivity;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     private List<Arme> values;
 
     private Context context;
     private ImageView imageView;
+    public static Arme arme;
 
 
 
@@ -29,6 +35,8 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         TextView txtHeader;
         TextView txtFooter;
         View layout;
+
+
 
         ViewHolder(View v) {
             super(v);
@@ -73,11 +81,33 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
         final Arme current = values.get(position);
 
+        // arme = ArmeActivity.listArme.get(position);
+
         holder.txtHeader.setText(current.getName());  //il ne va etre affiché que le nom et l'url
         // ici il sera possible de rajouter limage ou dautre info
         holder.txtFooter.setText(current.getDescription());
 
+
+
+
         Glide.with(context).load(current.getImgUrl()).fitCenter().into(imageView);
+
+
+
+        /* c'est ici que tu dois faire tes modifications */
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ArmeActivity.ArmeContext, ArmeDetailActivity.class);
+                intent.putExtra("Details", current);
+                startActivity(ArmeActivity.ArmeContext,intent,null);
+
+
+
+
+            }
+        });
+
 
 
 

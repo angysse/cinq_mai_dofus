@@ -30,6 +30,8 @@ public class ArmeActivity extends AppCompatActivity {
 
     private  final String BASE_URL = "https://fr.dofus.dofapi.fr/";
 
+    public static List<Arme> listArme;
+    public static Context ArmeContext;
 
     private RecyclerView recyclerView;
     private ListAdapter mAdapter;
@@ -41,6 +43,7 @@ public class ArmeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ArmeContext =this;
         setContentView(R.layout.activity_recycler);
 
         gson = new GsonBuilder()
@@ -95,7 +98,7 @@ public class ArmeActivity extends AppCompatActivity {
             public void onResponse(Call<List<Arme>> call, Response<List<Arme>> response) {
                 if(response.isSuccessful() && response.body() != null){
 
-                    List<Arme> listArme = response.body();
+                    listArme = response.body();
                     saveList(listArme);
                     showList(listArme);
                     Toast.makeText(getApplicationContext(), "API Success", Toast.LENGTH_SHORT).show();
