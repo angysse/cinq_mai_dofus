@@ -1,5 +1,7 @@
 # Application sur le jeu Dofus 
 
+Elève : Angelo Lebbolo 
+
  # Présentation : 
  
  Nous avions pour objectif le developpement d’une application mobile de manière individuelle, qui a due ensuite être mise sur GitHub. Nous avons pu grâce à ce projet, découvrir en quoi consiste Github.  
