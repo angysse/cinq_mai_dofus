@@ -7,7 +7,7 @@ Elève : Angelo Lebbolo
  Nous avions pour objectif le developpement d’une application mobile de manière individuelle, qui a due ensuite être mise sur GitHub. Nous avons pu grâce à ce projet, découvrir en quoi consiste Github.  
 Cette application mobile a été codée en Java, via le logiciel Android Studio. Nous devions réaliser une application pourvue d’une liste d’éléments,  faisant un appel WebService à une API Rest. Il était également demandé que chaque élément de la liste soit cliquable de maniére à afficher les détails des éléments. Un stockage des données était également demandé de manière à pouvoir accéder aux éléments sans connexion internet. 
 
-Mon application porte sur le MMORPG  Dofus, et plus principalement sur les différentes armes présentent en jeu. J'ai également fait une activité musique, et une autre "mini-jeu". 
+Mon application porte sur le MMORPG  Dofus, et plus principalement sur les différentes armes présentent en jeu. J'ai également fait une activité musique, et une autre "mini-jeu", lors du démarrage de l'application, il y a une page de chargement. 
 
 ## Prérequis : 
 - Android Studio 
@@ -27,12 +27,17 @@ Mon application porte sur le MMORPG  Dofus, et plus principalement sur les diff�
 -	Mini-jeu permettant de « découper » l’un des monstres du jeu
 -	Notification Push avec vibration via Firebase
 -	Design épuré et structuré 
+- SplashScreen
 
 # Librairies utilisées : 
 - Gson 
 - Glide
 
 # Fonctionnalités : 
+
+- SplashScreen : Ecran de chargement de l'application, d'une durée de 3 s. 
+
+<img src="https://github.com/angysse/cinq_mai_dofus/blob/master/ecranchargement.PNG" width="200" height="400" />
 
 - Ecran d'acceuil : 3 clicks possible (Arme = liste d'arme // Mini-je = Mini-Jeu // Musique)
 
